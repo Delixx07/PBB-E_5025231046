@@ -1,6 +1,4 @@
-# 📱 Flutter Demo App
-
-A simple Flutter application demonstrating core widget usage including layout, networking, and state management.
+# Task 2 web-programming
 
 ---
 
@@ -61,6 +59,7 @@ A simple Flutter application demonstrating core widget usage including layout, n
 
 ## 🗂️ Widget Hierarchy
 
+```
 MyApp (StatelessWidget)
 └── MaterialApp
     └── RowColumnPage (StatelessWidget)
@@ -99,7 +98,7 @@ MyApp (StatelessWidget)
                             │   └── TextStyle (fontSize: 16)
                             └── Container (color: cyan[200])
                                 └── IconButton (Icons.add)
-
+```
 
 ---
 

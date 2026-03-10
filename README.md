@@ -61,22 +61,45 @@ A simple Flutter application demonstrating core widget usage including layout, n
 
 ## 🗂️ Widget Hierarchy
 
-| Level | Widget | Notes |
-|-------|--------|-------|
-| 1 | `MaterialApp` | App root |
-| 2 | `Scaffold` | Page frame |
-| 3 | `AppBar` | Top bar |
-| 4 | `Text` | Title: *"My First App"* |
-| 3 | `Column` | Main body |
-| 4 | `Container` → `AspectRatio` → `Center` → `Image.network` | Image section |
-| 4 | `Container` → `Text` | Description: *"What image is that"* |
-| 4 | `Container` → `Row` | Category icon row |
-| 5 | `Column` → [`Icon`, `Text`] | Food |
-| 5 | `Column` → [`Icon`, `Text`] | Scenery |
-| 5 | `Column` → [`Icon`, `Text`] | People |
-| 4 | `CounterCard` → `Container` → `Row` | Counter card |
-| 5 | `Text` | Dynamic counter display |
-| 5 | `Container` → `IconButton` | Increment button (+) |
+MyApp (StatelessWidget)
+└── MaterialApp
+    └── RowColumnPage (StatelessWidget)
+        └── Scaffold
+            ├── AppBar
+            │   └── Text ('My First App')
+            │       └── TextStyle (color: black)
+            │
+            └── Column
+                ├── Container
+                │   └── AspectRatio (ratio: 1.0)
+                │       └── Container (color: lightBlue[100])
+                │           └── Center
+                │               └── Image.network
+                │
+                ├── Container (color: pink[200])
+                │   └── Text ('What image is that')
+                │       └── TextStyle (fontSize: 16)
+                │
+                ├── Container (color: yellow[200])
+                │   └── Row
+                │       ├── Column
+                │       │   ├── Icon (Icons.food_bank)
+                │       │   └── Text ('Food')
+                │       ├── Column
+                │       │   ├── Icon (Icons.landscape)
+                │       │   └── Text ('Scenery')
+                │       └── Column
+                │           ├── Icon (Icons.people)
+                │           └── Text ('People')
+                │
+                └── CounterCard (StatefulWidget)
+                    └── Container (color: cyan[100])
+                        └── Row
+                            ├── Text ('Counter here: $_counter')
+                            │   └── TextStyle (fontSize: 16)
+                            └── Container (color: cyan[200])
+                                └── IconButton (Icons.add)
+
 
 ---
 

@@ -23,13 +23,13 @@ A horizontal bar widget displayed at the top of the page. It shows the title **"
 
 ---
 
-### 4. `Text` — *inside AppBar*
+### 4. `Text` (*inside AppBar*)
 
 A widget for displaying static text. It renders the title `"My First App"` in the AppBar with black text color via `TextStyle(color: Colors.black)`.
 
 ---
 
-### 5. `Column` — *main body*
+### 5. `Column` (*main body*)
 
 A layout widget that arranges its children **vertically**. It serves as the main content container of the page, stacking all elements (image, text, icons, counter) in a single centered column.
 
@@ -49,7 +49,7 @@ A group of widgets for displaying an image from the internet.
 
 ---
 
-### 7. `Container` › `Text` — *image description*
+### 7. `Container` › `Text` (*image description*)
 
 | Widget | Function |
 |--------|----------|
@@ -58,7 +58,7 @@ A group of widgets for displaying an image from the internet.
 
 ---
 
-### 8. `Container` › `Row` › `Column` × 3 — *icon categories*
+### 8. `Container` › `Row` › `Column` × 3 (*icon categories*)
 
 A group of widgets for displaying three icon categories horizontally.
 
@@ -70,7 +70,7 @@ A group of widgets for displaying three icon categories horizontally.
 
 ---
 
-### 9. `CounterCard` — *StatefulWidget*
+### 9. `CounterCard` (*StatefulWidget*)
 
 A custom widget with a mutable **state**. It displays a counter number that increments each time the `+` button is pressed. It uses `setState()` to automatically update the UI when the state changes.
 

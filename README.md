@@ -1,6 +1,7 @@
 # Task 2 web-programming
 
 ---
+<img width="356" height="777" alt="image" src="https://github.com/user-attachments/assets/e4deff1f-a6c8-4af1-aa10-7a4734de0b93" />
 
 ## 🧩 Widget Overview
 

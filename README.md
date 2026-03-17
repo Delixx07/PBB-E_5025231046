@@ -84,7 +84,7 @@ A custom widget with a mutable **state**. It displays a counter number that incr
 
 ---
 
-## 🗂️ Widget Hierarchy
+## 🗂️ Widget Tree
 
 ```
 MyApp (StatelessWidget)
